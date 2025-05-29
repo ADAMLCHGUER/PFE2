@@ -522,7 +522,12 @@
             <style>
                 /* Styles globaux améliorés */
                 body {
-                    background-color: #f8f9fa;
+                    background-color: rgb(0, 128, 255);
+            background-image: url('{{ asset("storage/images/bg_user.jpg") }}');
+                    background-size: cover; 
+                    background-repeat: no-repeat; 
+                    background-position: center;
+
                 }
                 
                 .card {
