@@ -523,7 +523,7 @@
                 /* Styles globaux améliorés */
                 body {
                     background-color: rgb(0, 128, 255);
-            background-image: url('{{ asset("storage/images/bg_user.jpg") }}');
+            background-image: url('{{ asset("storage/images/bg_attt.jpg") }}');
                     background-size: cover; 
                     background-repeat: no-repeat; 
                     background-position: center;

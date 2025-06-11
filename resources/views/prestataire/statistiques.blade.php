@@ -23,8 +23,11 @@
 
 /* Arrière-plan moderne */
 body {
+    background-image:  url('{{ asset("storage/images/bg_attt.jpg") }}');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
     line-height: 1.6;
 }

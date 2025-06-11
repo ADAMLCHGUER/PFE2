@@ -105,7 +105,7 @@
             padding: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             overflow-x: hidden;
-            background-image: url('{{ asset("storage/images/bg1.jpeg") }}');
+            background-image: url('{{ asset("storage/images/bg1.jpg") }}');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;

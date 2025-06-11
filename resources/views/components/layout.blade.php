@@ -85,8 +85,8 @@
 
         /* Style du logo */
         .lg {
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             margin-right: 15px;
             filter: brightness(1.1) contrast(1.1);
         }
@@ -359,7 +359,7 @@
                 rgba(0, 0, 0, 0.85) 0%,
                 rgba(0, 0, 0, 0.7) 50%,
                 rgba(0, 0, 0, 0.85) 100%
-            ), url('storage/images/bg1.jpeg') ;
+            ), url('storage/images/bg1.jpg') ;
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
@@ -716,10 +716,11 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#experiences">
-                                <i class="bi bi-star me-1"></i> Expériences
-                            </a>
-                        </li>
+    <a class="nav-link {{ request()->routeIs('about') ? 'active' : '' }}" href="{{ route('about') }}">
+        <i class="bi bi-info-circle me-1"></i> À Propos
+    </a>
+</li>
+                        
                     </ul>
                     
                     <ul class="navbar-nav ms-auto">

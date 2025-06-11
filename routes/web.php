@@ -14,6 +14,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [AccueilController::class, 'index'])->name('accueil');
 Route::get('/services', [ServiceController::class, 'index'])->name('services.index');
 Route::get('/services/{slug}', [ServiceController::class, 'show'])->name('services.show');
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
+Route::get('/prestataire/register', function () {
+    return view('prestataire.register');
+})->name('prestataire.register');
 
 // Route de login pour résoudre la redirection par défaut de Laravel
 Route::get('/login', function () {
@@ -54,5 +60,6 @@ Route::middleware('auth.prestataire')->prefix('prestataire')->name('prestataire.
         Route::get('/rapports/{rapport}', [RapportController::class, 'show'])->name('rapports.show');
     });
 });
+
 
 // Routes d'administration (gérées par Backpack)

@@ -4,7 +4,7 @@
     <style>
         .inscription-section {
             min-height: 100vh;
-            background-image: url('{{ asset("storage/images/bg1.jpeg") }}');
+            background-image: url('{{ asset("storage/images/bg1.jpg") }}');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
